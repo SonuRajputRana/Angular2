@@ -1,0 +1,44 @@
+<div class="subject p-5">
+    <h3 class="text-center">Subject</h3>
+    <h3 class="text-center">Username <strong>{{username}}</strong></h3>
+<div class="row">
+    <div class="col-md-6">
+<app-comp1></app-comp1>
+    </div>
+    <div class="col-md-6">
+        <app-comp2></app-comp2>
+    </div>
+</div>
+<div class="col-md-6">
+    <select name="cource" id="" class="form-control" [(ngModel)]="step">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <div [ngSwitch]="step">
+        <div class="bordered p-2" *ngSwitchCase="1">
+            <h4>Step 1</h4>
+            <h6>This is a setep one</h6>
+        </div>
+        <div class="bordered p-2" *ngSwitchCase="2">
+            <h4>Step 2</h4>
+            <h6>This is a setep 2</h6>
+        </div>
+        <div class="bordered p-2" *ngSwitchCase="3">
+            <h4>Step 3</h4>
+            <h6>This is a setep 3</h6>
+        </div>
+        <div class="bordered p-2" *ngSwitchCase="4">
+            <h4>Step 4</h4>
+            <h6>This is a setep 4</h6>
+        </div>
+        <div class="bordered p-2" *ngSwitchCase="5">
+            <h4>Step 5</h4>
+            <h6>This is a setep 5</h6>
+        </div>
+    </div>
+</div>
+</div>
+

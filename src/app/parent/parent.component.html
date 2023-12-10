@@ -1,0 +1,36 @@
+<div class="parent">
+    <div *ngIf="card" class="alert alert-primary d-flex" role="alert">
+        <h5><strong class="text-success">{{Addpro}}</strong> is Selected</h5>
+        <button class="btn btn-info">Add Card</button>
+      </div>      
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card" style="height:400px;">
+                <img src="../assets/3.jpg" alt="" style="height: 300px;">
+                <div class="title text-center">
+                    <h4> Laptop</h4>
+                    <button class="btn btn-success" (click)="onClick('Laptop')">Selected product</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="height:400px;">
+                <img src="../assets/4.jpg" alt="" style="height: 300px;">
+                <div class="title text-center">
+                    <h4>Computer</h4>
+                    <button class="btn btn-success" (click)="onClick('Computer')">Selected product</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="height:400px;">
+                <img src="../assets/2.jpg" alt="" style="height: 300px;">
+                <div class="title text-center">
+                    <h4> Desktop</h4>
+                    <button class="btn btn-success" (click)="onClick('Dextop')">Selected product</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-child  (custumevent)="onEventdata($event)" [productvalue]="selectvalue"></app-child>
+</div>

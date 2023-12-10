@@ -1,0 +1,13 @@
+.galleryimg{
+display: flex;
+}
+.title{
+    width: 30%;
+    padding: 20px;
+    margin-top: 12px;
+
+}
+img{
+   border: 1px solid ;
+   border-radius: 6px;
+}
